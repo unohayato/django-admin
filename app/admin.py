@@ -16,6 +16,6 @@ admin.site.register(Book, BookAdmin)
 
 
 #デコレータを使う場合
-@admin.register(Book)
+@admin.register(Book) #平たく言うとここのクラスで処理されること前提で以下のクラスは処理されますよという意味なはず
 class BookAdmin(admin.ModelAdmin):
   pass
